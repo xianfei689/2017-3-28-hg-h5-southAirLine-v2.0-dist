@@ -1,0 +1,316 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>久加久111</title>
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+    <!-- build:css styles/vendor.css -->
+    <!-- bower:css -->
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css lib/reset/normalize.min.css -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <!-- endbuild -->
+    <!-- build:css lib/reset/reset.min.css -->
+    <link rel="stylesheet" href="styles/reset.css">
+    <!-- endbuild -->
+    <!-- build:css lib/reset/reset.min.css -->
+    <link rel="stylesheet" href="styles/reset.css">
+    <!-- endbuild -->
+    <!-- build:css styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+    <!-- build:css styles/unslider.css -->
+    <link rel="stylesheet" href="styles/unslidermin.css">
+    <!-- endbuild -->
+    <!-- build:js scripts/vendor/modernizr.js -->
+    <script src="/bower_components/modernizr/modernizr.js"></script>
+    <!-- endbuild -->
+</head>
+
+<body>
+    <!--/////long_leftbar/////start-->
+    <div class="long_leftbar"></div>
+    <!--/////long_leftbar/////end-->
+    <!--/////long_rightbar/////start-->
+    <div class="long_rightbar"></div>
+    <!--/////long_rightbar/////end-->
+    <!--/////head/////start-->
+    <div class="head">
+        <ul>
+            <li class="li1"><a>欢迎登录久加久网上商城!</a></li>
+            <li class="li2">
+                <img src="images/icon1.png" alt="">
+                <a href="#" class="li2a1">请登录</a>
+                <a href="#" class="li2a2">注册</a>
+                <a href="#" class="li2a3">我的订单</a>
+                <i>|</i>
+                <a href="#" class="li2a4">我的收藏</a>
+                <a href="#" class="shoppingCar"><span id="goodsNum">0</span></a>
+            </li>
+        </ul>
+        <dl>
+            <dd>
+                <a href="#">
+                    <img src="images/logo.png" alt="">
+                </a>
+            </dd>
+            <dd class="dd2">
+                <input type="text" name="goodsName" id="goodsName" class="goodsName" placeholder="请输入商品名称搜索">
+                <a href="#" id="search" class="search"></a>
+            </dd>
+        </dl>
+    </div>
+    <!--/////head/////end-->
+    <!--/////long_navi/////start-->
+    <div class="long_navi">
+        <dl class="ddl">
+            <dd class="dd1 ddl_dd" id="allBtn">
+                <ul class="allUL">
+                    <li class="hasPop li1">
+                        <div class="div1">
+                            <span class="Timg Tmove"></span><i class="Tmove">航旅天下</i>
+                        </div>
+                        <ul class="navi_pop">
+                            <dl>
+                                <dd class="dTitle">景点门票景点门票</dd>
+                                <dd class="dBody">
+                                    <i>上海上海</i><i>上海上海上海</i><i>上海</i><i>上海上海上</i><i>上海</i><i>上海</i>
+                                    <i>上海</i><i>上海</i><i>上海</i><i>上海</i><i>上海</i><i>上海</i>
+                                    <i>上海</i><i>上海</i><i>上海</i><i>上海</i><i>上海</i><i>上海</i>
+                                    <i>上海</i><i>上海</i><i>上海</i><i>上海</i><i>上海</i><i>上海</i>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dd class="dTitle">景点门票</dd>
+                                <dd class="dBody">
+                                    <i>上海</i><i>上海</i><i>上海</i><i>上海</i><i>上海</i><i>上海</i>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dd class="dTitle">景点门票1122</dd>
+                                <dd class="dBody">
+                                    <i>上海</i><i>上海</i><i>上海</i><i>上海</i><i>上海</i><i>上海</i>
+                                </dd>
+                            </dl>
+                        </ul>
+                    </li>
+                    <li class="hasPop li2">
+                        <div class="div2">
+                            <span class="Timg Tmove"></span><i class="Tmove">家居生活</i>
+                        </div>
+                        <ul class="navi_pop">222
+                        </ul>
+                    </li>
+                    <li class="hasPop li3">
+                        <div class="div3">
+                            <span class="Timg Tmove"></span><i class="Tmove">运动户外</i>
+                        </div>
+                        <ul class="navi_pop">33
+                        </ul>
+                    </li>
+                    <li class="hasPop li4">
+                        <div class="div4">
+                            <span class="Timg Tmove"></span><i class="Tmove">数码3C</i>
+                        </div>
+                        <ul class="navi_pop">44
+                        </ul>
+                    </li>
+                    <li class="hasPop li5">
+                        <div class="div5">
+                            <span class="Timg Tmove"></span><i class="Tmove">贵金属</i>
+                        </div>
+                        <ul class="navi_pop">555
+                        </ul>
+                    </li>
+                    <li class="hasPop li6">
+                        <div class="div6">
+                            <span class="Timg Tmove"></span><i class="Tmove">家用电器</i>
+                        </div>
+                        <ul class="navi_pop">666
+                        </ul>
+                    </li>
+                    <li class=" li7">
+                        <div class="div7">
+                            <span class="Timg Tmove com_none"></span><i class="Tmove"></i>
+                        </div>
+                        <ul class="navi_pop">777
+                        </ul>
+                    </li>
+                    <li class=" li8">
+                        <div class="div8">
+                            <span class="Timg Tmove com_none"></span><i class="Tmove"></i>
+                        </div>
+                        <ul class="navi_pop">888
+                        </ul>
+                    </li>
+                    <li class=" li9">
+                        <div class="div9">
+                            <span class="Timg Tmove com_none"></span><i class="Tmove"></i>
+                        </div>
+                        <ul class="navi_pop">999
+                        </ul>
+                    </li>
+                </ul>
+            </dd>
+            <dd class="dd2 active  ddl_dd">首页</dd>
+            <dd class="dd3 ddl_dd  ddl_hover">品牌导购</dd>
+            <dd class="dd4 ddl_dd ddl_hover">团购专区</dd>
+            <dd class="dd5 ddl_dd  ddl_hover">活动专区</dd>
+        </dl>
+    </div>
+    <!--/////long_navi/////end-->
+    <!--/////banner/////start-->
+    <div id="banner">
+        <div class="banner">
+            <ul style="height: 450px;">
+                <li style="background-image: url(images/bg1.png);background-size: 100% 100%;height: 450px;"></li>
+                <li style="background-image: url(images/bg2.png);background-size: 100% 100%;height: 450px;"></li>
+                <li style="background-image: url(images/bg3.png);background-size: 100% 100%;height: 450px;"></li>
+                <li style="background-image: url(images/bg4.png);background-size: 100% 100%;height: 450px;"></li>
+                <li style="background-image: url(images/bg5.png);background-size: 100% 100%;height: 450px;"></li>
+            </ul>
+        </div>
+        <div id="notice">
+            <div  class="Ndiv1">
+                <img src="images/nImg.png" alt="" class="nImg">
+            </div>
+            <div class="Ndiv2">
+                        <p class="p1">
+                            <img src="images/voice.png" alt="" class="voice">
+                            <span class="titile">商城公告</span>
+                        </p>
+                        <p class="p2">
+                            <i class="circle"></i>
+                            <span class="cont">久加久积分到期清零公告</span>
+                        </p>
+                        <p class="p2">
+                             <i class="circle"></i>
+                            <span  class="cont" >关于久加久积分商城发货时关于久加久积分商城发货时</span>
+                        </p>
+                        <p class="p2">
+                             <i class="circle"></i>
+                            <span  class="cont">久加久积分到期清零公告清零</span>
+                        </p>
+            </div>
+        </div>
+    </div>
+    <!--/////banner/////end-->
+    <!--/////goodsDiv/////start-->
+    <div class="goodsDiv">
+            <ul>
+                <li class="lii1">
+                        <img src="images/icon4.png" alt="" class="content">
+                        <div class="content content1">
+                            <p class="pp1">司顿美容修甲系列STC010A</p>
+                            <p class="pp2">19600积分</p>
+                            <p>
+                                <img src="images/goods1.png" alt="">
+                            </p>
+                        </div>
+                        <div class="content content1">
+                            <p class="pp1">司顿美容修甲系列STC010A</p>
+                            <p class="pp2">19600积分</p>
+                            <p>
+                                <img src="images/goods1.png" alt="">
+                            </p>
+                        </div>
+                        <div class="content content1">
+                            <p class="pp1">司顿美容修甲系列STC010A</p>
+                            <p class="pp2">19600积分</p>
+                            <p>
+                                <img src="images/goods1.png" alt="">
+                            </p>
+                        </div>
+                        <div class="content content1 contLast">
+                            <p class="pp1">司顿美容修甲系列STC010A</p>
+                            <p class="pp2">19600积分</p>
+                            <p>
+                                <img src="images/goods1.png" alt="">
+                            </p>
+                        </div>
+                </li>
+                <li class="lii2">
+                        <div class="ct">
+                             <span class="ct_span ct_inline">
+                                 <i class="gTitle">萨顿朗动炫彩五件套1</i><br>
+                                 <i class="gFee">9520积分</i>
+                             </span>
+                                 <img src="images/goods2.png" alt="" class="ct_inline  ct_img">
+                        </div>
+                        <div class="ct">
+                             <span class="ct_span ct_inline">
+                                 <i class="gTitle">萨顿朗动炫彩五件套2萨顿朗动炫彩五件套2</i><br>
+                                 <i class="gFee">9520积分</i>
+                             </span>
+                                 <img src="images/goods2.png" alt="" class="ct_inline  ct_img">
+                        </div>
+                        <div class="ct ct_last">
+                             <span class="ct_span ct_inline">
+                                 <i class="gTitle">萨顿朗动炫彩五件套3</i><br>
+                                 <i class="gFee">9520积分</i>
+                             </span>
+                                 <img src="images/goods2.png" alt="" class="ct_inline  ct_img">
+                        </div>
+                        <img src="images/icon5.png" alt="" class="ct_lastImg">
+                </li>
+            </ul>
+    </div>
+    <!--/////goodsDiv/////end-->
+    <!--/////floor1/////start-->
+    <div class="floor1" id="floor1">
+            <p class="fTitle">
+                            <img src="images/f1.png" alt="">
+                            <i>家居日用</i>
+                            <img src="images/load.png" alt="">
+                            <img src="images/more.png" alt="" class="fTitle_right">
+            </p>
+
+
+    </div>
+    <!--/////floor1/////end-->
+    <!--/////floor2/////start-->
+    <div class="floor2"  style="width: 100%;height: 200px;background-color: orange;"></div>
+    <!--/////floor2/////end-->
+    <!--/////floor3/////start-->
+    <div class="floor3"></div>
+    <!--/////floor3/////end-->
+    <!--/////floor4/////start-->
+    <div class="floor4"></div>
+    <!--/////floor4/////end-->
+    <!--/////bottom/////start-->
+    <div class="bottom"></div>
+    <!--/////bottom/////end-->
+    <!-- build:js lib/jquery/jquery.min.js -->
+    <!-- bower:js -->
+    <script src="/bower_components/jquery/dist/jquery.js"></script>
+    <script src="/bower_components/fastclick/lib/fastclick.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:js scripts/unslider.js -->
+    <script src="lib/unslider/js/unslider-min.js"></script>
+    <!-- endbuild -->
+    <!-- build:js scripts/main.js -->
+    <script src="scripts/main.js"></script>
+    <!-- endbuild -->
+    <!-- build:js scripts/busi.js -->
+    <script src="scripts/a.js"></script>
+    <script src="scripts/b.js"></script>
+    <!-- endbuild -->
+    <script type="text/javascript">
+    $(function() {
+        "use strict";
+        $('.banner').unslider({
+            autoplay: true,
+            nav: true
+        });
+
+    })
+    </script>
+</body>
+
+</html>
