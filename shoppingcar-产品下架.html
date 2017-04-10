@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>购物车-下架产品</title>
+    <title>购物车</title>
     <meta charset="UTF-8">
     <!-- H5页面窗口自动调整到设备宽度，并禁止用户缩放 -->
     <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
@@ -19,22 +19,26 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="blank">
     <!-- windows phone 点击无高光 -->
     <meta name="msapplication-tap-highlight" content="no">
+
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/reset.css">
+
     <link rel="stylesheet" href="css/shoppingcar.css">
+
+    <link rel="stylesheet" href="css/zui.css">
 </head>
 
 <body>
     <header>
-        <p>购物车</p>
+        <p id="xianfei">购物车</p>
     </header>
     <div class="goods-content">
         <form class="mui-input-group">
             <div class="mui-input-row mui-checkbox mui-left">
-                <input name="checkbox" value="Item 1" type="checkbox" >
+                <input name="checkbox" value="Item 1" class="checkOne" type="checkbox" >
                 <img src="images/shoppingcar/good1.png" class="goodsImg">
                 <span class="goods-desc">【海飞丝】去屑洗发露 750 ml 丝质柔滑型（新老包装随机...</span>
-                <div class="mui-numbox" data-numbox-min='1' data-numbox-max='9'  data-numbox-step='1'>
+                <div class="mui-numbox" data-numbox-min='0' data-numbox-max='9'  data-numbox-step='1'>
                     <button class="mui-btn mui-btn-numbox-minus" type="button">-</button>
                     <input class="mui-input-numbox" type="number">
                     <button class="mui-btn mui-btn-numbox-plus" type="button">+</button>
@@ -43,25 +47,42 @@
                  <span class="font-red2">2040</span>里程
                 </div>
                 <div class="goods-deal">
-                    <img src="images/shoppingcar/star.png" class="dealImg">
-                    <img src="images/shoppingcar/del.png"  class="dealImg">
+                    <span class="col-goods dealImg-off"></span>
+                    <span class="dealImg2"></span>
                 </div>
             </div>
-            <div class="mui-input-row mui-checkbox mui-left soldOut">
+             <div class="mui-input-row mui-checkbox mui-left soldOut">
                  <span class="soldOutIcon">下架</span>
                 <img src="images/shoppingcar/good2.png" class="goodsImg">
                  <span class="goods-desc">【海飞丝】去屑洗发露 750 ml 丝质柔滑型（新老包装随机...</span>
-                 <span>商品已经下架</span>
+                 <span class="soldoutDesc">商品已经下架</span>
+                <div class="goods-length">
+                 <span class="font-red2">102</span>里程
+                </div>
+               <div class="goods-deal">
+                    <span class="col-goods dealImg-off"></span>
+                    <span class="dealImg2"></span>
+                </div>
+            </div>
+            <div class="mui-input-row mui-checkbox mui-left">
+                <input name="checkbox" value="Item 2" class="checkOne" type="checkbox" >
+                <img src="images/shoppingcar/good2.png" class="goodsImg">
+                 <span class="goods-desc">【海飞丝】去屑洗发露 750 ml 丝质柔滑型（新老包装随机...</span>
+                <div class="mui-numbox">
+                    <button class="mui-btn mui-btn-numbox-minus" type="button">-</button>
+                    <input class="mui-input-numbox" type="number">
+                    <button class="mui-btn mui-btn-numbox-plus" type="button">+</button>
+                </div>
                 <div class="goods-length">
                  <span class="font-red2">102</span>里程
                 </div>
                 <div class="goods-deal">
-                    <img src="images/shoppingcar/star.png" class="dealImg">
-                    <img src="images/shoppingcar/del.png"  class="dealImg">
+                    <span class="col-goods dealImg-off"></span>
+                    <span class="dealImg2"></span>
                 </div>
             </div>
             <div class="mui-input-row mui-checkbox mui-left">
-                <input name="checkbox" value="Item 2" type="checkbox" >
+                <input name="checkbox" value="Item 2" class="checkOne" type="checkbox" >
                 <img src="images/shoppingcar/good3.png" class="goodsImg">
                  <span class="goods-desc">【海飞丝】去屑洗发露 750 ml 丝质柔滑型（新老包装随机...</span>
                 <div class="mui-numbox">
@@ -73,12 +94,12 @@
                  <span class="font-red2">102</span>里程
                 </div>
                 <div class="goods-deal">
-                    <img src="images/shoppingcar/star.png" class="dealImg">
-                    <img src="images/shoppingcar/del.png"  class="dealImg">
+                    <span class="col-goods dealImg-on"></span>
+                    <span class="dealImg2"></span>
                 </div>
             </div>
-            <div class="mui-input-row mui-checkbox mui-left">
-                <input name="checkbox" value="Item 2" type="checkbox" >
+        <!--     <div class="mui-input-row mui-checkbox mui-left">
+                <input name="checkbox" value="Item 2" class="checkOne" type="checkbox" >
                 <img src="images/shoppingcar/good4.png" class="goodsImg">
                  <span class="goods-desc">【海飞丝】去屑洗发露 750 ml 丝质柔滑型（新老包装随机...</span>
                 <div class="mui-numbox">
@@ -90,12 +111,12 @@
                  <span class="font-red2">102</span>里程
                 </div>
                 <div class="goods-deal">
-                    <img src="images/shoppingcar/star.png" class="dealImg">
-                    <img src="images/shoppingcar/del.png"  class="dealImg">
+                    <span class="col-goods dealImg-off"></span>
+                    <span class="dealImg2"></span>
                 </div>
             </div>
             <div class="mui-input-row mui-checkbox mui-left">
-                <input name="checkbox" value="Item 1" type="checkbox" >
+                <input name="checkbox" value="Item 1" class="checkOne" type="checkbox" >
                 <img src="images/shoppingcar/good1.png" class="goodsImg">
                  <span class="goods-desc">【海飞丝】去屑洗发露 750 ml 丝质柔滑型（新老包装随机...</span>
                 <div class="mui-numbox">
@@ -107,12 +128,12 @@
                  <span class="font-red2">102</span>里程
                 </div>
                 <div class="goods-deal">
-                    <img src="images/shoppingcar/star.png" class="dealImg">
-                    <img src="images/shoppingcar/del.png"  class="dealImg">
+                    <span class="col-goods dealImg-off"></span>
+                    <span class="dealImg2"></span>
                 </div>
             </div>
             <div class="mui-input-row mui-checkbox mui-left">
-                <input name="checkbox" value="Item 2" type="checkbox" >
+                <input name="checkbox" value="Item 2" class="checkOne" type="checkbox" >
                 <img src="images/shoppingcar/good2.png" class="goodsImg">
                  <span class="goods-desc">【海飞丝】去屑洗发露 750 ml 丝质柔滑型（新老包装随机...</span>
                 <div class="mui-numbox">
@@ -124,12 +145,12 @@
                  <span class="font-red2">102</span>里程
                 </div>
                 <div class="goods-deal">
-                    <img src="images/shoppingcar/star.png" class="dealImg">
-                    <img src="images/shoppingcar/del.png"  class="dealImg">
+                    <span class="col-goods dealImg-off"></span>
+                    <span class="dealImg2"></span>
                 </div>
             </div>
             <div class="mui-input-row mui-checkbox mui-left">
-                <input name="checkbox" value="Item 2" type="checkbox" >
+                <input name="checkbox" value="Item 2" class="checkOne" type="checkbox" >
                 <img src="images/shoppingcar/good3.png" class="goodsImg">
                  <span class="goods-desc">【海飞丝】去屑洗发露 750 ml 丝质柔滑型（新老包装随机...</span>
                 <div class="mui-numbox">
@@ -141,12 +162,12 @@
                  <span class="font-red2">102</span>里程
                 </div>
                 <div class="goods-deal">
-                    <img src="images/shoppingcar/star.png" class="dealImg">
-                    <img src="images/shoppingcar/del.png"  class="dealImg">
+                    <span class="col-goods dealImg-on"></span>
+                    <span class="dealImg2"></span>
                 </div>
             </div>
             <div class="mui-input-row mui-checkbox mui-left">
-                <input name="checkbox" value="Item 2" type="checkbox" >
+                <input name="checkbox" value="Item 2" class="checkOne" type="checkbox" >
                 <img src="images/shoppingcar/good4.png" class="goodsImg">
                  <span class="goods-desc">【海飞丝】去屑洗发露 750 ml 丝质柔滑型（新老包装随机...</span>
                 <div class="mui-numbox">
@@ -158,10 +179,12 @@
                  <span class="font-red2">102</span>里程
                 </div>
                 <div class="goods-deal">
-                    <img src="images/shoppingcar/star.png" class="dealImg">
-                    <img src="images/shoppingcar/del.png"  class="dealImg">
+                    <span class="col-goods dealImg-off"></span>
+                    <span class="dealImg2"></span>
                 </div>
             </div>
+ -->
+
            <!--  <div class="mui-input-row mui-checkbox mui-left mui-disabled">
                 <input name="checkbox" type="checkbox" disabled="disabled">
             </div> -->
@@ -169,7 +192,7 @@
     </div>
     <div class="navi2-bot">
             <div class="mui-input-row mui-checkbox mui-left mui-checkbox2" >
-                <input name="checkbox" value="Item 1" type="checkbox" id="checkAll">
+                <input name="checkbox" value="Item 1"  type="checkbox" id="checkAll">
                 <label for="checkAll" id="navi-babel">全选</label>
                   <a id="calc">去结算</a>
                 <span class="totalLen">总计 <i id="sum" class="font-red2">2040</i>公里</span>
@@ -208,6 +231,7 @@
 <script src="lib/fastclick/fastclick.js"></script>
 <script src="lib/mui/mui.min.js"></script>
 <script src="js/homepage.js"></script>
+<script src="lib/zui/zui.min.js"></script>
 <script type="text/javascript">
 /**
  * [description]
@@ -220,6 +244,8 @@
 $(function() {
     FastClick.attach(document.body);
 });
+
+
 </script>
 
 </html>
