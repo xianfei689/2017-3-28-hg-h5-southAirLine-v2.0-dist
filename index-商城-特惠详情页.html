@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>购物车-兑换失败-身份认证</title>
+    <title>首页-商城特惠详情页</title>
     <meta charset="UTF-8">
     <!-- H5页面窗口自动调整到设备宽度，并禁止用户缩放 -->
     <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
@@ -21,54 +21,52 @@
     <meta name="msapplication-tap-highlight" content="no">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/shoppingcar.css">
-    <style type="text/css">
-    body {
-        background-color: #fff;
-    }
-
-    .pp1 {
-        text-align: center;
-        color: #06214e;
-        font-size: 16px;
-        margin-top: 63%;
-    }
-
-    .pp2 {
-        text-align: center;
-        color: #8290a0;
-        font-size: 13px;
-        margin-top: 15px;
-    }
-
-    .div1 {
-        text-align: center;
-    }
-
-    .back {
-        font-size: 15px;
-        color: #2f8bcd;
-    }
-    </style>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/zui.css">
 </head>
 
 <body>
     <header>
-        <p>购物车</p>
+        <p>商城特惠详情页</p><img src="images/index/back.png" class="backImg" onclick="window.location.href='index.html'">
     </header>
-    <p class="pp1">没有找到相应的购物车信息</p>
-    <p class="pp2">去添加商品</p>
-    <div class="div1" style="margin-top: 40px;margin-bottom: 135px;">
-        <a href="" class="approveBtn">添加商品</a>
-    </div>
-        <div class="navi2-bot">
-            <div class="mui-input-row mui-checkbox mui-left mui-checkbox2" >
-                <input name="checkbox" value="Item 1" type="checkbox" id="checkAll">
-                <label for="checkAll" id="navi-babel">全选</label>
-                  <a id="calc">去结算</a>
-                <span class="totalLen">总计 <i id="sum" class="font-red2">0</i>公里</span>
-
-            </div>
+    <img src="images/index/background.png" style="width: 100%;height: 128px;">
+    <div class="goods-content  gd-cont">
+        <div class="gdOne">
+            <p class="gdp1">日本TOMONI烘干机家用速干衣衣服</p>
+            <p class="gdp2">兑换级别：普通卡、银卡、金卡会员</p>
+            <p class="gdp3"><span class="gdLen">3000</span>公里</p>
+            <img src="images/index/gd1.png" class="gdImg">
+        </div>
+        <div class="gdOne">
+            <p class="gdp1">一壶二杯旅行功夫茶具套装茶盘茶.....</p>
+            <p class="gdp2">兑换级别：普通卡、银卡、金卡会员</p>
+            <p class="gdp3"><span class="gdLen">xxx</span>公里</p>
+            <img src="images/index/gd2.png" class="gdImg">
+        </div>
+         <div class="gdOne">
+            <p class="gdp1">小熊煮蛋器自动断电单层蒸蛋器</p>
+            <p class="gdp2">兑换级别：普通卡、银卡、金卡会员 拷贝</p>
+            <p class="gdp3"><span class="gdLen">xxx</span>公里</p>
+            <img src="images/index/gd3.png" class="gdImg">
+        </div>
+         <div class="gdOne">
+            <p class="gdp1">欧美时尚百搭简约手提包</p>
+            <p class="gdp2">兑换级别：普通卡、银卡、金卡会员 拷贝</p>
+            <p class="gdp3"><span class="gdLen">xxx</span>公里</p>
+            <img src="images/index/gd4.png" class="gdImg">
+        </div>
+         <div class="gdOne">
+            <p class="gdp1"> 不锈钢旋转32G</p>
+            <p class="gdp2">兑换级别：普通卡、银卡、金卡会员 拷贝</p>
+            <p class="gdp3"><span class="gdLen">xxx</span>公里</p>
+            <img src="images/index/gd5.png" class="gdImg">
+        </div>
+         <div class="gdOne">
+            <p class="gdp1">小米智能手环计步器</p>
+            <p class="gdp2">兑换级别：普通卡、银卡、金卡会员 拷贝</p>
+            <p class="gdp3"><span class="gdLen">xxx</span>公里</p>
+            <img src="images/index/gd6.png" class="gdImg">
+        </div>
     </div>
     <div class="navi-bottom navi-bottom2">
         <div class="navi-one">
@@ -101,6 +99,8 @@
 <script src="lib/jQuery/3.2.1/jquery.min.js"></script>
 <script src="lib/fastclick/fastclick.js"></script>
 <script src="lib/mui/mui.min.js"></script>
+<script src="js/shoppingcar.js"></script>
+<script src="lib/zui/zui.min.js"></script>
 <script type="text/javascript">
 /**
  * [description]
