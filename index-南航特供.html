@@ -23,6 +23,7 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/zui.css">
+    <link rel="stylesheet" href="lib/animate/animate.min.css">
 </head>
 
 <body>
@@ -59,7 +60,7 @@
                 <span class="dot dot-bottom"></span>
                 </span>
             </div>
-            <div class="bar-one">
+            <div id="classify" class="bar-one">
                 分类
             </div>
         </div>
@@ -156,7 +157,8 @@
             <span class="font-grey">在线客服</span>
         </div>
     </div>
-    <div class="slide-right">
+    <!-- 侧边栏展示代码 -->
+    <div class="slide-right   animated fadeInRight" id="slide-right">
         <div class="classify">
             <p class="clas-pt">产品分类</p>
             <div>
@@ -185,7 +187,8 @@
             </div>
         </div>
     </div>
-    <div class="slide-shade"></div>
+    <!-- 侧边栏展示代码 -->
+    <div class="slide-shade" id="slide-shade"></div>
 </body>
 <script src="lib/jQuery/3.2.1/jquery.min.js"></script>
 <script src="lib/fastclick/fastclick.js"></script>
@@ -227,7 +230,25 @@ $('.topbar').find('.bar-one').click(function() {
         $(this).find('.dot').eq(0).addClass('active');
     }
 
-})
+});
+
+
+/**
+ * [点击分类  侧边栏展示代码]
+ * @AuthorHTL                          {{Mundo                Tomi          Zhou}}
+ * @Email                              {{zhou0425@gmail.com}}
+ * @DateTime  2017-04-12T17:47:22+0800
+ * @param     {[type]}                 ){}                  [description]
+ * @return    {[type]}                                        [description]
+ */
+$("#classify").click(function(){
+      if ($('#slide-right').hasClass('fadeInRight')) {
+            $('#slide-right').removeClass('fadeInRight').addClass('fadeOutRight');
+
+      }else{
+           $('#slide-right').removeClass('fadeOutRight').addClass('fadeInRight');
+      }
+});
 </script>
 
 </html>
