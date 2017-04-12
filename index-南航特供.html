@@ -161,7 +161,7 @@
     <div class="slide-right   animated " id="slide-right">
         <div class="classify">
             <p class="clas-pt">产品分类</p>
-            <div>
+            <div class="classify-item">
                 <p class="clas-it active-show"><i>运动户外1</i> <span class="arrow">&gt;</span></p>
                 <p class="clas-it active-show"><i>运动户外2</i> <span class="arrow">&gt;</span></p>
                 <p class="clas-it active-show"><i>运动户外3</i> <span class="arrow">&gt;</span></p>
@@ -170,20 +170,20 @@
         </div>
         <div class="classify">
             <p class="clas-pt">品牌分类</p>
-            <div>
-                <p class="clas-it"><i>运动户外1</i><span class="arrow">&gt;</span></p>
-                <p class="clas-it"><i>运动户外2</i><span class="arrow">&gt;</span></p>
-                <p class="clas-it"><i>运动户外3</i><span class="arrow">&gt;</span></p>
+            <div  class="classify-item">
+                <p class="clas-it"><i>运动户外11</i><span class="arrow">&gt;</span></p>
+                <p class="clas-it"><i>运动户外22</i><span class="arrow">&gt;</span></p>
+                <p class="clas-it"><i>运动户外33</i><span class="arrow">&gt;</span></p>
                 <p class="clas-it"><i>运动户外4</i><span class="arrow">&gt;</span></p>
             </div>
         </div>
         <div class="classify">
             <p class="clas-pt">里程分类</p>
-            <div>
-                <p class="clas-it"><i>运动户外1</i><span class="arrow">&gt;</span></p>
-                <p class="clas-it"><i>运动户外2</i><span class="arrow">&gt;</span></p>
-                <p class="clas-it"><i>运动户外3</i><span class="arrow">&gt;</span></p>
-                <p class="clas-it"><i>运动户外4</i><span class="arrow">&gt;</span></p>
+            <div  class="classify-item">
+                <p class="clas-it"><i>运动户外111</i><span class="arrow">&gt;</span></p>
+                <p class="clas-it"><i>运动户外222</i><span class="arrow">&gt;</span></p>
+                <p class="clas-it"><i>运动户外333</i><span class="arrow">&gt;</span></p>
+                <p class="clas-it"><i>运动户外444</i><span class="arrow">&gt;</span></p>
             </div>
         </div>
     </div>
@@ -265,7 +265,24 @@ $("#slide-right").find('.clas-it').click(function() {
         $('#slide-right').find('.active-on').removeClass('active-on');
         $(this).addClass('active-on');
     }
-})
+});
+
+
+
+/**
+ * [侧边栏  点击分类展开]
+ * @AuthorHTL                          {{Mundo                Tomi          Zhou}}
+ * @Email                              {{zhou0425@gmail.com}}
+ * @DateTime  2017-04-12T18:56:53+0800
+ * @param     {[type]}                 ){}                  [description]
+ * @return    {[type]}                                        [description]
+ */
+$('#slide-right').find('.clas-pt').click(function(){
+    if (!$(this).parent().find('.item-show').hasClass('item-show')) {
+        $('#slide-right').find('.item-show').removeClass('item-show');
+        $(this).parent().find('.classify-item').addClass('item-show');
+    }
+});
 </script>
 
 </html>
