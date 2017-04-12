@@ -158,12 +158,12 @@
         </div>
     </div>
     <!-- 侧边栏展示代码 -->
-    <div class="slide-right   animated fadeInRight" id="slide-right">
+    <div class="slide-right   animated " id="slide-right">
         <div class="classify">
             <p class="clas-pt">产品分类</p>
             <div>
                 <p class="clas-it active-show"><i>运动户外1</i> <span class="arrow">&gt;</span></p>
-                <p class="clas-it active-show  acitve-on"><i>运动户外2</i> <span class="arrow">&gt;</span></p>
+                <p class="clas-it active-show"><i>运动户外2</i> <span class="arrow">&gt;</span></p>
                 <p class="clas-it active-show"><i>运动户外3</i> <span class="arrow">&gt;</span></p>
                 <p class="clas-it active-show"><i>运动户外4</i> <span class="arrow">&gt;</span></p>
             </div>
@@ -241,14 +241,31 @@ $('.topbar').find('.bar-one').click(function() {
  * @param     {[type]}                 ){}                  [description]
  * @return    {[type]}                                        [description]
  */
-$("#classify").click(function(){
-      if ($('#slide-right').hasClass('fadeInRight')) {
-            $('#slide-right').removeClass('fadeInRight').addClass('fadeOutRight');
-
-      }else{
-           $('#slide-right').removeClass('fadeOutRight').addClass('fadeInRight');
-      }
+$("#classify,#slide-shade").click(function() {
+    if ($('#slide-right').hasClass('fadeInRight')) {
+        $('#slide-right').removeClass('fadeInRight').addClass('fadeOutRight');
+        $('#slide-shade').hide();
+    } else {
+        $('#slide-right').removeClass('fadeOutRight').addClass('fadeInRight');
+        $('#slide-shade').show();
+    }
 });
+
+
+/**
+ * [侧边栏  子内容点击效果  排序的代码写在这里面]
+ * @AuthorHTL                          {{Mundo                Tomi          Zhou}}
+ * @Email                              {{zhou0425@gmail.com}}
+ * @DateTime  2017-04-12T18:01:37+0800
+ * @param     {[type]}                 ){}                  [description]
+ * @return    {[type]}                                        [description]
+ */
+$("#slide-right").find('.clas-it').click(function() {
+    if (!$(this).hasClass('active-on')) {
+        $('#slide-right').find('.active-on').removeClass('active-on');
+        $(this).addClass('active-on');
+    }
+})
 </script>
 
 </html>
