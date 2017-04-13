@@ -32,28 +32,28 @@
             <p>南航特供</p><img src="images/index/back.png" class="backImg" onclick="window.location.href='index.html'">
         </header>
         <div class="topbar">
-            <div class="bar-one">
+            <div class="bar-one bar-out">
                 价格
                 <span class="bar-right">
                  <span class="dot dot-top active"></span>
                 <span class="dot dot-bottom"></span>
                 </span>
             </div>
-            <div class="bar-one">
+            <div class="bar-one bar-out">
                 销量
                 <span class="bar-right">
                  <span class="dot dot-top "></span>
                 <span class="dot dot-bottom"></span>
                 </span>
             </div>
-            <div class="bar-one">
+            <div class="bar-one bar-out">
                 收藏
                 <span class="bar-right">
                  <span class="dot dot-top "></span>
                 <span class="dot dot-bottom"></span>
                 </span>
             </div>
-            <div class="bar-one">
+            <div class="bar-one bar-out">
                 时间
                 <span class="bar-right">
                  <span class="dot dot-top "></span>
@@ -103,33 +103,6 @@
             <img src="images/index/gd6.png" class="gdImg">
         </div>
     </div>
-    <!--     <div class="navi-bottom navi-bottom2">
-        <div class="navi-one">
-            <img src="images/index/navi12.png">
-            <br>
-            <span class="font-grey">首页</span>
-        </div>
-        <div class="navi-one">
-            <img src="images/index/navi22.png">
-            <br>
-            <span class="font-grey">搜索</span>
-        </div>
-        <div class="navi-one">
-            <img src="images/index/navi31.png">
-            <br>
-            <span class="font-pick">购物车</span>
-        </div>
-        <div class="navi-one">
-            <img src="images/index/navi42.png">
-            <br>
-            <span class="font-grey">会员中心</span>
-        </div>
-        <div class="navi-one">
-            <img src="images/index/navi52.png">
-            <br>
-            <span class="font-grey">在线客服</span>
-        </div>
-    </div> -->
     <div class="navi-bottom">
         <div class="navi-one">
             <img src="images/index/navi11.png">
@@ -216,7 +189,8 @@ $(function() {
  * @param     {[type]}                 ){}                  [description]
  * @return    {[type]}                                        [description]
  */
-$('.topbar').find('.bar-one').click(function() {
+$('.topbar').find('.bar-out').click(function() {
+    $('#slide-right').find('.active-on').removeClass('active-on');
     if ($(this).find('.active').length) {
         if ($(this).find('.dot').eq(0).hasClass('active')) {
             $(this).parent().find(".active").removeClass('active');
@@ -261,6 +235,7 @@ $("#classify,#slide-shade").click(function() {
  * @return    {[type]}                                        [description]
  */
 $("#slide-right").find('.clas-it').click(function() {
+    $('.topbar').find('.active').removeClass('active');
     if (!$(this).hasClass('active-on')) {
         $('#slide-right').find('.active-on').removeClass('active-on');
         $(this).addClass('active-on');
@@ -281,6 +256,8 @@ $('#slide-right').find('.clas-pt').click(function(){
     if (!$(this).parent().find('.item-show').hasClass('item-show')) {
         $('#slide-right').find('.item-show').removeClass('item-show');
         $(this).parent().find('.classify-item').addClass('item-show');
+    }else{
+       $(this).parent().find('.item-show').removeClass('item-show');
     }
 });
 </script>
