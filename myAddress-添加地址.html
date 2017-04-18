@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>我的地址</title>
+    <meta charset="UTF-8">
+    <!-- H5页面窗口自动调整到设备宽度，并禁止用户缩放 -->
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <!-- 忽略将页面中的数字识别为电话号码 忽略Android平台中对邮箱地址的识别 -->
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="format-detection" content="email=no" />
+    <!-- 针对手持设备优化，主要是针对一些老的不识别viewport的浏览器，比如黑莓 -->
+    <meta name="HandheldFriendly" content="true">
+    <!-- winphone系统a、input标签被点击时产生的半透明灰色背景 -->
+    <meta name="msapplication-tap-highlight" content="no">
+    <!-- 设置Web应用是否以全屏模式运行。 -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <!-- Web App的状态栏（屏幕顶部栏）的样式  如果设置为blank，则状态栏会有一个黑色的背景 -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="blank">
+    <!-- windows phone 点击无高光 -->
+    <meta name="msapplication-tap-highlight" content="no">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/shoppingcar.css">
+    <link rel="stylesheet" href="css/zui.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <style type="text/css">
+    .confirmInput {
+        color: #fff;
+        text-align: center;
+        display: inline-block;
+        border-radius: 24px;
+        background-color: #db0048;
+        font-size: 14px;
+        width: 140px;
+        height: 36px;
+        line-height: 36px;
+    }
+
+    .cancelInput {
+      float: right;
+      margin-top: 9px;
+        border: 1px solid #db0048;
+        color: #db0048;
+        text-align: center;
+        display: inline-block;
+        border-radius: 24px;
+        background-color: #fff;
+        font-size: 14px;
+        width: 140px;
+        height: 36px;
+        line-height: 36px;
+    }
+    .bottom{
+        height: 49px;
+        width: 100%;
+        padding-left: 27px;
+        padding-right: 27px;
+        line-height: 49px;
+        position: fixed;
+        left: 0;
+        bottom:0;
+        border-top: 1px solid #d5d5d5;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="top-div">
+        <header>
+            <p>添加地址</p><img src="images/index/back.png" class="backImg" onclick="window.location.href='myAddress.html'">
+        </header>
+    </div>
+    <div class="addresss-detail" style=" margin-top: 45px;">
+        <p class="aade1">
+            填写信息
+        </p>
+        <p class="aade1">收货人姓名
+            <input type="text" class="input1" id="name" placeholder="请输入收货人姓名">
+        </p>
+        <p class="aade1">联系电话
+            <input type="tel" class="input1" id="phone" placeholder="请输入联系电话">
+        </p>
+        <p class="aade1">邮政编码
+            <input type="tel" class="input1" id="code" placeholder="请输入邮政编码">
+        </p>
+        <p class="aade1" id="showAddress">所属地区
+            <input type="text" class="input1" id="address" placeholder="请选择所属地区">
+        </p>
+        <p class="aade1">街道地址
+            <input type="text" class="input1" id="addr-detail" placeholder="请输入街道地址">
+        </p>
+        <div class="aade1 adde-addr">
+            设为默认
+            <div class="mui-switch ">
+                <!-- 默认选中 加class mui-active -->
+                <div class="mui-switch-handle"></div>
+            </div>
+            </>
+        </div>
+    </div>
+    <div class="bottom">
+        <span class="confirmInput">确认</span>
+        <spna class="cancelInput">取消</spna>
+    </div>
+</body>
+<script src="lib/jQuery/3.2.1/jquery.min.js"></script>
+<script src="lib/fastclick/fastclick.js"></script>
+<script src="lib/mui/mui.min.js"></script>
+<script src="lib/mui/city.data-3.js"></script>
+<script src="lib/mui/mui.picker.js"></script>
+<script src="lib/mui/mui.poppicker.js"></script>
+<script src="lib/zui/zui.min.js"></script>
+<script type="text/javascript">
+/**
+ * [description]
+ * @AuthorHTL                          {{Mundo                Tomo          Zhou}}
+ * @Email                              {{zhou0425@gmail.com}}
+ * @DateTime  2017-04-01T09:22:30+0800
+ * @param     {[type]}                 )                      {                     FastClick.attach(document.body);} [description]
+ * @return    {[type]}                                        [description]
+ */
+$(function() {
+    FastClick.attach(document.body);
+});
+
+/**
+ * [设置默认地址]
+ * @AuthorHTL                          {{Mundo                Tomi          Zhou}}
+ * @Email                              {{zhou0425@gmail.com}}
+ * @DateTime  2017-04-18T11:31:01+0800
+ * @param     {[type]}                 ){                                            if ($(this).is(":checked")) {         $('.checkOne2').prop('checked', false);         $('.mui-input-group').find('.addrTxt').text('设为默认地址');         $(this).prop('checked', 'checked').parent().find('.addrTxt').text('默认地址');      }} [description]
+ * @return    {[type]}                                        [description]
+ */
+$('.checkOne2').click(function() {
+    if ($(this).is(":checked")) {
+        $('.checkOne2').prop('checked', false);
+        $('.mui-input-group').find('.addrTxt').text('设为默认地址');
+        $(this).prop('checked', 'checked').parent().find('.addrTxt').text('默认地址');
+    }
+});
+
+
+/**
+ * [mui  picker  组件]
+ * @AuthorHTL                          {{Mundo                Tomi          Zhou}}
+ * @Email                              {{zhou0425@gmail.com}}
+ * @DateTime  2017-04-18T16:11:44+0800
+ * @param     {[type]}                 $                      [description]
+ * @param     {[type]}                 doc                    [description]
+ * @return    {[type]}                                        [description]
+ */
+(function($, doc) {
+    $.init();
+    $.ready(function() {
+        var cityPicker3 = new $.PopPicker({
+            layer: 3
+        });
+        cityPicker3.setData(cityData3);
+        var showCityPickerButton = doc.getElementById('showAddress');
+        var cityResult3 = doc.getElementById('address');
+        showCityPickerButton.addEventListener('tap', function(event) {
+            cityPicker3.show(function(items) {
+                cityResult3.value = (items[0] || {}).text + " " + (items[1] || {}).text + " " + (items[2] || {}).text;
+            });
+        }, false);
+    });
+})(mui, document);
+
+/**
+ *  判断是否设置为默认  【判断   mui-switch 是否含有类    mui-active】
+ */
+function judgeIsDefault() {
+    return $('.mui-switch').hasClass('mui-active');
+}
+</script>
+
+</html>

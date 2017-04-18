@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>首页-收藏的商品-没有搜到</title>
+    <meta charset="UTF-8">
+    <!-- H5页面窗口自动调整到设备宽度，并禁止用户缩放 -->
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <!-- 忽略将页面中的数字识别为电话号码 忽略Android平台中对邮箱地址的识别 -->
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="format-detection" content="email=no" />
+    <!-- 针对手持设备优化，主要是针对一些老的不识别viewport的浏览器，比如黑莓 -->
+    <meta name="HandheldFriendly" content="true">
+    <!-- winphone系统a、input标签被点击时产生的半透明灰色背景 -->
+    <meta name="msapplication-tap-highlight" content="no">
+    <!-- 设置Web应用是否以全屏模式运行。 -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <!-- Web App的状态栏（屏幕顶部栏）的样式  如果设置为blank，则状态栏会有一个黑色的背景 -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="blank">
+    <!-- windows phone 点击无高光 -->
+    <meta name="msapplication-tap-highlight" content="no">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/zui.css">
+    <style type="text/css">
+    body {
+        background-color: #fff;
+    }
+
+    .div1 {
+        border-top: 5px solid #eee;
+        border-bottom: 5px solid #eee;
+        margin-top: 44px;
+        padding-left: 15px;
+        padding-top: 17px;
+        padding-bottom: 17px;
+        color: #757575;
+        font-size: 13px;
+        line-height: 1.75em;
+    }
+
+    .div2 {
+        padding-left: 16px;
+        padding-right: 15px;
+    }
+
+    .dv2-d1 {
+        border-bottom: 1px solid #eee;
+        height: 45px;
+        line-height: 45px;
+    }
+
+    .div2 input {
+        color: #454545;
+        font-size: 14px;
+        margin: 0;
+        padding: 0;
+        border: none;
+        width: 60%;
+        padding-left: 10px;
+    }
+
+    .div2 {
+        font-size: 14px;
+        color: #454545;
+    }
+
+    input::placeholder {
+        font-size: 12px;
+        color: #ddd;
+    }
+
+    #sendCode {
+        float: right;
+        color: #8290a0;
+        font-size: 16px;
+    }
+
+    .dv2-d2 {
+        padding-top: 14px;
+        visibility: hidden;
+    }
+
+    .vis-show {
+        visibility: visible;
+    }
+
+    .dv2-d2 img {
+        float: left;
+        width: 18px;
+        height: 18px;
+    }
+
+    .dv2-d2 span {
+        margin-left: 15px;
+        position: relative;
+        top: 2px;
+    }
+
+    .div3 {
+        color: #fff;
+        background-color: #db0048;
+        text-align: center;
+        margin: auto;
+        border-radius: 24px;
+        width: 155px;
+        height: 45px;
+        line-height: 45px;
+        margin-top: 20px;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="top-div">
+        <header>
+            <p>订单支付</p><img src="images/index/back.png" class="backImg" onclick="window.location.href='shoppingcar-订单支付-成功.html'">
+        </header>
+    </div>
+    <div class="div1">
+        <span>为了您的账号安全，请输入验证码进行验证</span>
+        <br>
+        <span>请选择获取验证码的方式</span>
+    </div>
+    <div class="div2">
+        <div class="dv2-d1">
+            <span>手机号码</span>
+            <input type="tel" id="phone" name="" placeholder="请输入手机号码">
+        </div>
+        <div class="dv2-d1">
+            <span>电子邮箱</span>
+            <input type="text" id="email" name="" placeholder="请输入电子邮箱">
+        </div>
+        <div class="dv2-d1">
+            <span>验证码</span>
+            <input type="text" id="code" name="" placeholder="请校验验证码">
+            <span id="sendCode">发送验证码</span>
+        </div>
+        <div class="dv2-d2" id="showErr">
+            <img src="images/shoppingcar/err.png"> <span class="font-red3 errTxt">请输入验证码</span>
+        </div>
+    </div>
+    <div class="div3" id="topay" >确认支付</div>
+</body>
+<script src="lib/jQuery/3.2.1/jquery.min.js"></script>
+<script src="lib/fastclick/fastclick.js"></script>
+<script src="lib/mui/mui.min.js"></script>
+<script src="js/shoppingcar.js"></script>
+<script src="lib/zui/zui.min.js"></script>
+<script type="text/javascript">
+/**
+ * [description]
+ * @AuthorHTL                          {{Mundo                Tomo          Zhou}}
+ * @Email                              {{zhou0425@gmail.com}}
+ * @DateTime  2017-04-01T09:22:30+0800
+ * @param     {[type]}                 )                      {                     FastClick.attach(document.body);} [description]
+ * @return    {[type]}                                        [description]
+ */
+$(function() {
+    FastClick.attach(document.body);
+});
+
+/**
+ * 倒计时
+ */
+
+$('#sendCode').click(function() {
+    var time = 60;
+    //9936000   61200  2760 40
+    countDowmTimeLoad(time);
+    /**倒计时方法*/
+    function countDowmTimeLoad(time) {
+        var time = Number(time);
+        var timer = window.setInterval(function() {
+            if (time > 1) {
+                time--;
+                var min1 = time % 60;
+                var str = min1 + "秒";
+                $("#sendCode").text(str);
+            } else {
+                clearInterval(timer);
+                $("#sendCode").text("重新发送");
+            }
+        }, 1000);
+    }
+});
+
+
+$('#topay').click(function() {
+    var phoneReg = /^(((13[0-9]{1})|(15[0-9]{1})|(18[0-9]{1}))+\d{8})$/;
+    var emailReg = /^([a-zA-Z0-9]+[_|\_|\.]?)*[a-zA-Z0-9]+@([a-zA-Z0-9]+[_|\_|\.]?)*[a-zA-Z0-9]+\.[a-zA-Z]{2,3}$/;
+    if ($('#phone').val() == '') {
+        $("#showErr").addClass("vis-show").find('.errTxt').text('请输入手机号');
+        return;
+    }
+    if (!phoneReg.test($("#phone").val())) {
+        $("#showErr").addClass("vis-show").find('.errTxt').text('请输入有效的手机号！');
+        return;
+    }
+    if ($('#email').val() == '') {
+        $("#showErr").addClass("vis-show").find('.errTxt').text('请输入电子邮箱');
+        return;
+    }
+    if (!emailReg.test($("#email").val())) {
+        $("#showErr").addClass("vis-show").find('.errTxt').text('请输入有效的电子邮箱！');
+        return;
+    }
+    if ($('#code').val() == '') {
+        $("#showErr").addClass("vis-show").find('.errTxt').text('请输入验证码');
+        return;
+    }
+    window.location.href='shoppingcar-支付结果-成功.html';
+});
+</script>
+
+</html>

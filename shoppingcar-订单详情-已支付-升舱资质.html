@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>订单详情-已支付-升舱资质</title>
+    <meta charset="UTF-8">
+    <!-- H5页面窗口自动调整到设备宽度，并禁止用户缩放 -->
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <!-- 忽略将页面中的数字识别为电话号码 忽略Android平台中对邮箱地址的识别 -->
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="format-detection" content="email=no" />
+    <!-- 针对手持设备优化，主要是针对一些老的不识别viewport的浏览器，比如黑莓 -->
+    <meta name="HandheldFriendly" content="true">
+    <!-- winphone系统a、input标签被点击时产生的半透明灰色背景 -->
+    <meta name="msapplication-tap-highlight" content="no">
+    <!-- 设置Web应用是否以全屏模式运行。 -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <!-- Web App的状态栏（屏幕顶部栏）的样式  如果设置为blank，则状态栏会有一个黑色的背景 -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="blank">
+    <!-- windows phone 点击无高光 -->
+    <meta name="msapplication-tap-highlight" content="no">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/zui.css">
+    <style type="text/css">
+    body {
+        background-color: #fff;
+    }
+
+    .div1 {
+        padding-left: 15px;
+        padding-right: 15px;
+        border-bottom: 1px solid #d5d5d5;
+        height: 34px;
+        line-height: 34px;
+        margin-top: 48px;
+    }
+
+    .sp1 {
+        font-size: 15px;
+        color: #454545;
+    }
+
+    .sp2 {
+        float: right;
+        font-size: 14px;
+    }
+
+    .goodsDetail {
+        height: 80px;
+        border-bottom: 5px solid #eee;
+        position: relative;
+    }
+
+    .goodsDetail2 {
+        border-bottom: 5px solid #eee;
+        padding-left: 15px;
+        line-height: 1.25em;
+        padding-top: .5em;
+        padding-bottom: .5em;
+    }
+    .goodsDetail3 {
+        padding-left: 15px;
+        line-height: 1.25em;
+        padding-top: .5em;
+        padding-bottom: .5em;
+    }
+
+    .gdImg {
+        position: absolute;
+        top: 10px;
+        left: 15px;
+        width: 60px;
+        height: 60px;
+        border: 1px solid #d5d5d5;
+    }
+
+    .gd-sp1 {
+        position: absolute;
+        top: 10px;
+        color: #454545;
+        font-size: 14px;
+        left: 88px;
+    }
+
+    .gd-sp2 {
+        position: absolute;
+        left: 88px;
+        top: 35px;
+        color: #454545;
+        font-size: 12px;
+    }
+
+    .spp {
+        color: #454545;
+        font-size: 12px;
+    }
+
+    .spp1 {
+        display: inline-block;
+        width: 77px;
+        text-align: right;
+    }
+    .spp3{
+      font-size: 12px;
+    }
+    .div2{
+      padding-left: 15px;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="top-div">
+        <header>
+            <p>订单详情</p><img src="images/index/back.png" class="backImg" onclick="window.location.href='memberCenter-所有订单.html'">
+        </header>
+    </div>
+    <div class="div1">
+        <span class="sp1">订单详情</span>
+        <span class="sp2 font-red2">已支付</span>
+    </div>
+    <div class="goodsDetail">
+        <img src="images/index/gd1.png" class="gdImg">
+        <span class="gd-sp1">老人优惠升舱</span>
+        <span class="gd-sp2">
+                 里程：<i class="font-red2">37400</i> 数量：<i class="font-red2">1</i>
+             </span>
+    </div>
+    <div class="goodsDetail2">
+        <span class="sp1">订单信息</span>
+        <br>
+        <p class="spp">
+            <span class="spp1">机票票号：</span>1541224514586789245
+            <br>
+            <span class="spp1">升舱支付人：</span>王烧饼
+            <br>
+            <span class="spp1">联系手机号：</span>187584584251
+            <br>
+        </p>
+    </div>
+    <div class="goodsDetail3">
+        <span class="sp1">升舱信息</span>
+        <br>
+        <p class="spp">
+            <span class="spp1">订单编号：</span>1541224514586789245
+            <br>
+            <span class="spp1">下单时间：</span>2017-4-12 16:45:56
+            <br>
+            <span class="spp1">付款时间：</span>2017-4-12 16:46:01
+            <br>
+            <span class="spp1">商品类型：</span>升舱资质
+            <br>
+            <span class="spp1">备注信息：</span>暂无备注，暂无备注，暂无备注，
+        </p>
+    </div>
+    <div class="div2">
+        <span class="sp1">总&nbsp; 价：</span><span class="spp3 font-red2">37400里程</span>
+    </div>
+    <div class="navi-bottom">
+        <div class="navi-one" onclick="window.location.href='index.html'">
+            <img src="images/index/navi12.png">
+            <br>
+            <span class="font-grey index-frant">首页</span>
+        </div>
+        <div class="navi-one" onclick="window.location.href='search.html'">
+            <img src="images/index/navi22.png">
+            <br>
+            <span class="font-grey">搜索</span>
+        </div>
+        <div class="navi-one" onclick="window.location.href='shoppingcar.html'">
+            <img src="images/index/navi32.png">
+            <br>
+            <span class="font-grey">购物车</span>
+        </div>
+        <div class="navi-one">
+            <img src="images/index/navi41.png">
+            <br>
+            <span class="font-pick">会员中心</span>
+        </div>
+        <div class="navi-one" onclick="window.location.href='customerServiceOnline.html'">
+            <img src="images/index/navi52.png">
+            <br>
+            <span class="font-grey">在线客服</span>
+        </div>
+    </div>
+</body>
+<script src="lib/jQuery/3.2.1/jquery.min.js"></script>
+<script src="lib/fastclick/fastclick.js"></script>
+<script src="lib/mui/mui.min.js"></script>
+<script src="js/shoppingcar.js"></script>
+<script src="lib/zui/zui.min.js"></script>
+<script type="text/javascript">
+/**
+ * [description]
+ * @AuthorHTL                          {{Mundo                Tomo          Zhou}}
+ * @Email                              {{zhou0425@gmail.com}}
+ * @DateTime  2017-04-01T09:22:30+0800
+ * @param     {[type]}                 )                      {                     FastClick.attach(document.body);} [description]
+ * @return    {[type]}                                        [description]
+ */
+$(function() {
+    FastClick.attach(document.body);
+});
+</script>
+
+</html>

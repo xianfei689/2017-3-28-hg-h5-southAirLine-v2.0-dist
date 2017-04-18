@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>我的地址</title>
+    <meta charset="UTF-8">
+    <!-- H5页面窗口自动调整到设备宽度，并禁止用户缩放 -->
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <!-- 忽略将页面中的数字识别为电话号码 忽略Android平台中对邮箱地址的识别 -->
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="format-detection" content="email=no" />
+    <!-- 针对手持设备优化，主要是针对一些老的不识别viewport的浏览器，比如黑莓 -->
+    <meta name="HandheldFriendly" content="true">
+    <!-- winphone系统a、input标签被点击时产生的半透明灰色背景 -->
+    <meta name="msapplication-tap-highlight" content="no">
+    <!-- 设置Web应用是否以全屏模式运行。 -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <!-- Web App的状态栏（屏幕顶部栏）的样式  如果设置为blank，则状态栏会有一个黑色的背景 -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="blank">
+    <!-- windows phone 点击无高光 -->
+    <meta name="msapplication-tap-highlight" content="no">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/shoppingcar.css">
+    <link rel="stylesheet" href="css/zui.css">
+    <style type="text/css">
+
+    </style>
+</head>
+
+<body>
+     <div class="top-div">
+        <header>
+            <p>我的地址</p><img src="images/index/back.png" class="backImg" onclick="window.location.href='memberCenter.html'">
+        </header>
+    </div>
+
+    <div class="goods-content" style="margin-bottom: 90px; margin-top: 45px;">
+        <div class="add-address" onclick="window.location.href='myAddress-添加地址.html'">
+                <img src="images/addr/add.png">新增收货地址
+        </div>
+        <form class="mui-input-group">
+            <div class="personInfo">
+                 <span class="sp1">王少斌</span> <span class="sp2">15515515971</span>
+                 <br>
+                 <span class="sp3">广东省广州市白云区叉叉街道叉叉单元0101室</span>
+            </div>
+            <div class="mui-input-row2 mui-checkbox mui-left">
+                <input name="checkbox" value="Item 1" class="checkOne2" type="checkbox" checked>
+                <span class="selectAddr"></span><i class="addrTxt">默认地址</i>
+                <span class="select-right">
+                        <span class="sele-par1"><img src="images/addr/del.png">删除</span>
+                        <span class="sele-par2"><img src="images/addr/edit.png">编辑</span>
+                </span>
+            </div>
+             <div class="personInfo">
+                 <span class="sp1">王少斌</span> <span class="sp2">15515515971</span>
+                 <br>
+                 <span class="sp3">广东省广州市白云区叉叉街道叉叉单元0101室</span>
+            </div>
+            <div class="mui-input-row2 mui-checkbox mui-left">
+                <input name="checkbox" value="Item 1" class="checkOne2" type="checkbox">
+                <span class="selectAddr"></span><i class="addrTxt">设为默认地址</i>
+                <span class="select-right">
+                        <span class="sele-par1"><img src="images/addr/del.png">删除</span>
+                        <span class="sele-par2"><img src="images/addr/edit.png">编辑</span>
+                </span>
+            </div>
+             <div class="personInfo">
+                 <span class="sp1">王少斌</span> <span class="sp2">15515515971</span>
+                 <br>
+                 <span class="sp3">广东省广州市白云区叉叉街道叉叉单元0101室</span>
+            </div>
+            <div class="mui-input-row2 mui-checkbox mui-left">
+                <input name="checkbox" value="Item 1" class="checkOne2" type="checkbox">
+                <span class="selectAddr"></span><i class="addrTxt">设为默认地址</i>
+                <span class="select-right">
+                        <span class="sele-par1"><img src="images/addr/del.png">删除</span>
+                        <span class="sele-par2"><img src="images/addr/edit.png">编辑</span>
+                </span>
+            </div>
+             <div class="personInfo">
+                 <span class="sp1">王少斌</span> <span class="sp2">15515515971</span>
+                 <br>
+                 <span class="sp3">广东省广州市白云区叉叉街道叉叉单元0101室</span>
+            </div>
+            <div class="mui-input-row2 mui-checkbox mui-left">
+                <input name="checkbox" value="Item 1" class="checkOne2" type="checkbox">
+                <span class="selectAddr"></span><i class="addrTxt">设为默认地址</i>
+                <span class="select-right">
+                        <span class="sele-par1"><img src="images/addr/del.png">删除</span>
+                        <span class="sele-par2"><img src="images/addr/edit.png">编辑</span>
+                </span>
+            </div>
+        </form>
+    </div>
+</body>
+<script src="lib/jQuery/3.2.1/jquery.min.js"></script>
+<script src="lib/fastclick/fastclick.js"></script>
+<script src="lib/mui/mui.min.js"></script>
+<script src="lib/zui/zui.min.js"></script>
+<script type="text/javascript">
+/**
+ * [description]
+ * @AuthorHTL                          {{Mundo                Tomo          Zhou}}
+ * @Email                              {{zhou0425@gmail.com}}
+ * @DateTime  2017-04-01T09:22:30+0800
+ * @param     {[type]}                 )                      {                     FastClick.attach(document.body);} [description]
+ * @return    {[type]}                                        [description]
+ */
+$(function() {
+    FastClick.attach(document.body);
+});
+
+/**
+ * [设置默认地址]
+ * @AuthorHTL                          {{Mundo                Tomi          Zhou}}
+ * @Email                              {{zhou0425@gmail.com}}
+ * @DateTime  2017-04-18T11:31:01+0800
+ * @param     {[type]}                 ){                                            if ($(this).is(":checked")) {         $('.checkOne2').prop('checked', false);         $('.mui-input-group').find('.addrTxt').text('设为默认地址');         $(this).prop('checked', 'checked').parent().find('.addrTxt').text('默认地址');      }} [description]
+ * @return    {[type]}                                        [description]
+ */
+$('.checkOne2').click(function(){
+      if ($(this).is(":checked")) {
+         $('.checkOne2').prop('checked', false);
+         $('.mui-input-group').find('.addrTxt').text('设为默认地址');
+         $(this).prop('checked', 'checked').parent().find('.addrTxt').text('默认地址');
+      }
+});
+</script>
+
+</html>

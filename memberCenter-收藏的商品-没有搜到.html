@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>首页-收藏的商品-没有搜到</title>
+    <meta charset="UTF-8">
+    <!-- H5页面窗口自动调整到设备宽度，并禁止用户缩放 -->
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <!-- 忽略将页面中的数字识别为电话号码 忽略Android平台中对邮箱地址的识别 -->
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="format-detection" content="email=no" />
+    <!-- 针对手持设备优化，主要是针对一些老的不识别viewport的浏览器，比如黑莓 -->
+    <meta name="HandheldFriendly" content="true">
+    <!-- winphone系统a、input标签被点击时产生的半透明灰色背景 -->
+    <meta name="msapplication-tap-highlight" content="no">
+    <!-- 设置Web应用是否以全屏模式运行。 -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <!-- Web App的状态栏（屏幕顶部栏）的样式  如果设置为blank，则状态栏会有一个黑色的背景 -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="blank">
+    <!-- windows phone 点击无高光 -->
+    <meta name="msapplication-tap-highlight" content="no">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/zui.css">
+    <style type="text/css">
+    .goods-content {
+        margin-bottom: 10px;
+    }
+
+    .pp1 {
+        text-align: center;
+        color: #06214e;
+        font-size: 16px;
+        margin-top: 63%;
+    }
+
+    .pp2 {
+        text-align: center;
+        color: #8290a0;
+        font-size: 13px;
+        margin-top: 15px;
+    }
+
+    .div1 {
+        text-align: center;
+    }
+    body{
+        background-color: #fff;
+    }
+    </style>
+</head>
+
+<body>
+  <div class="top-div">
+
+    <header>
+        <p>收藏的商品</p><img src="images/index/back.png" class="backImg" onclick="window.location.href='memberCenter.html'">
+    </header>
+  </div>
+    <p class="pp1">没有找到相应的收藏商品</p>
+    <p class="pp2">去添加收藏</p>
+    <div class="div1" style="margin-top: 40px;margin-bottom: 135px;">
+        <a href="" class="approveBtn">添加收藏</a>
+    </div>
+</body>
+<script src="lib/jQuery/3.2.1/jquery.min.js"></script>
+<script src="lib/fastclick/fastclick.js"></script>
+<script src="lib/mui/mui.min.js"></script>
+<script src="js/shoppingcar.js"></script>
+<script src="lib/zui/zui.min.js"></script>
+<script type="text/javascript">
+/**
+ * [description]
+ * @AuthorHTL                          {{Mundo                Tomo          Zhou}}
+ * @Email                              {{zhou0425@gmail.com}}
+ * @DateTime  2017-04-01T09:22:30+0800
+ * @param     {[type]}                 )                      {                     FastClick.attach(document.body);} [description]
+ * @return    {[type]}                                        [description]
+ */
+$(function() {
+    FastClick.attach(document.body);
+});
+
+</script>
+
+</html>
