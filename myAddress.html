@@ -29,67 +29,66 @@
 </head>
 
 <body>
-     <div class="top-div">
+    <div class="top-div">
         <header>
             <p>我的地址</p><img src="images/index/back.png" class="backImg" onclick="window.location.href='memberCenter.html'">
         </header>
     </div>
-
     <div class="goods-content" style="margin-bottom: 90px; margin-top: 45px;">
         <div class="add-address" onclick="window.location.href='myAddress-添加地址.html'">
-                <img src="images/addr/add.png">新增收货地址
+            <img src="images/addr/add.png">新增收货地址
         </div>
         <form class="mui-input-group">
             <div class="personInfo">
-                 <span class="sp1">王少斌</span> <span class="sp2">15515515971</span>
-                 <br>
-                 <span class="sp3">广东省广州市白云区叉叉街道叉叉单元0101室</span>
+                <span class="sp1">王少斌111</span> <span class="sp2">15515515971</span>
+                <br>
+                <span class="sp3">广东省广州市白云区叉叉街道叉叉单元0101室111</span>
             </div>
             <div class="mui-input-row2 mui-checkbox mui-left">
                 <input name="checkbox" value="Item 1" class="checkOne2" type="checkbox" checked>
                 <span class="selectAddr"></span><i class="addrTxt">默认地址</i>
                 <span class="select-right">
                         <span class="sele-par1"><img src="images/addr/del.png">删除</span>
-                        <span class="sele-par2"><img src="images/addr/edit.png">编辑</span>
+                <span class="sele-par2" onclick="window.location.href='myAddress-修改地址.html'"><img src="images/addr/edit.png">编辑</span>
                 </span>
             </div>
-             <div class="personInfo">
-                 <span class="sp1">王少斌</span> <span class="sp2">15515515971</span>
-                 <br>
-                 <span class="sp3">广东省广州市白云区叉叉街道叉叉单元0101室</span>
+            <div class="personInfo">
+                <span class="sp1">王少斌222</span> <span class="sp2">15515515971</span>
+                <br>
+                <span class="sp3">广东省广州市白云区叉叉街道叉叉单元0101室222</span>
             </div>
             <div class="mui-input-row2 mui-checkbox mui-left">
                 <input name="checkbox" value="Item 1" class="checkOne2" type="checkbox">
                 <span class="selectAddr"></span><i class="addrTxt">设为默认地址</i>
                 <span class="select-right">
                         <span class="sele-par1"><img src="images/addr/del.png">删除</span>
-                        <span class="sele-par2"><img src="images/addr/edit.png">编辑</span>
+                <span class="sele-par2" onclick="window.location.href='myAddress-修改地址.html'"><img src="images/addr/edit.png">编辑</span>
                 </span>
             </div>
-             <div class="personInfo">
-                 <span class="sp1">王少斌</span> <span class="sp2">15515515971</span>
-                 <br>
-                 <span class="sp3">广东省广州市白云区叉叉街道叉叉单元0101室</span>
+            <div class="personInfo">
+                <span class="sp1">王少斌333</span> <span class="sp2">15515515971</span>
+                <br>
+                <span class="sp3">广东省广州市白云区叉叉街道叉叉单元0101室333</span>
             </div>
             <div class="mui-input-row2 mui-checkbox mui-left">
                 <input name="checkbox" value="Item 1" class="checkOne2" type="checkbox">
                 <span class="selectAddr"></span><i class="addrTxt">设为默认地址</i>
                 <span class="select-right">
                         <span class="sele-par1"><img src="images/addr/del.png">删除</span>
-                        <span class="sele-par2"><img src="images/addr/edit.png">编辑</span>
+                <span class="sele-par2" onclick="window.location.href='myAddress-修改地址.html'"><img src="images/addr/edit.png">编辑</span>
                 </span>
             </div>
-             <div class="personInfo">
-                 <span class="sp1">王少斌</span> <span class="sp2">15515515971</span>
-                 <br>
-                 <span class="sp3">广东省广州市白云区叉叉街道叉叉单元0101室</span>
+            <div class="personInfo">
+                <span class="sp1">王少斌</span> <span class="sp2">15515515971</span>
+                <br>
+                <span class="sp3">广东省广州市白云区叉叉街道叉叉单元0101室</span>
             </div>
             <div class="mui-input-row2 mui-checkbox mui-left">
                 <input name="checkbox" value="Item 1" class="checkOne2" type="checkbox">
                 <span class="selectAddr"></span><i class="addrTxt">设为默认地址</i>
                 <span class="select-right">
                         <span class="sele-par1"><img src="images/addr/del.png">删除</span>
-                        <span class="sele-par2"><img src="images/addr/edit.png">编辑</span>
+                <span class="sele-par2" onclick="window.location.href='myAddress-修改地址.html'"><img src="images/addr/edit.png">编辑</span>
                 </span>
             </div>
         </form>
@@ -120,13 +119,51 @@ $(function() {
  * @param     {[type]}                 ){                                            if ($(this).is(":checked")) {         $('.checkOne2').prop('checked', false);         $('.mui-input-group').find('.addrTxt').text('设为默认地址');         $(this).prop('checked', 'checked').parent().find('.addrTxt').text('默认地址');      }} [description]
  * @return    {[type]}                                        [description]
  */
-$('.checkOne2').click(function(){
-      if ($(this).is(":checked")) {
-         $('.checkOne2').prop('checked', false);
-         $('.mui-input-group').find('.addrTxt').text('设为默认地址');
-         $(this).prop('checked', 'checked').parent().find('.addrTxt').text('默认地址');
-      }
+$('.checkOne2').click(function() {
+    if ($(this).is(":checked")) {
+        $('.checkOne2').prop('checked', false);
+        $('.mui-input-group').find('.addrTxt').text('设为默认地址');
+        $(this).prop('checked', 'checked').parent().find('.addrTxt').text('默认地址');
+    }
 });
-</script>
+
+
+$('.goods-content').find('.sele-par1').click(function() {
+    var self = this;
+    var dialog3 = new $.Dialog({
+        //弹出类型   默认alert
+        type: 'confirm',
+        //弹出标题 必填
+        title: '确认删除',
+        //弹出内容  必填
+        content: '您确认删除此地址吗？',
+        //点击确认回调函数 可不填
+        confirm: function() {
+            // alert("click confirm  event  callBack !");
+
+            new $.Dialog({
+                //弹出框类型必须传
+                type: 'alert',
+                //弹出标题
+                title: '删除成功',
+                timeout: 2000,
+                //弹出内容
+                content: '您已成功删除该地址！',
+                confirm: function() {
+                    // alert("click event  callBack 2222!");
+                    $(self).parent().parent().prev().remove();
+                    $(self).parent().parent().remove();
+                }
+            });
+        },
+        //点击取消回调   可不填
+        cancel: function() {
+            // alert("click cancel event callback ! ");
+        }
+
+    });
+})
+
+  </script>
 
 </html>

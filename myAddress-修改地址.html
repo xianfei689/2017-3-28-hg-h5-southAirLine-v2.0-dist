@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>我的地址-添加地址</title>
+    <title>我的地址-修改地址</title>
     <meta charset="UTF-8">
     <!-- H5页面窗口自动调整到设备宽度，并禁止用户缩放 -->
     <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
@@ -67,7 +67,7 @@
 <body>
     <div class="top-div">
         <header>
-            <p>添加地址</p><img src="images/index/back.png" class="backImg" onclick="window.location.href='myAddress.html'">
+            <p>编辑地址</p><img src="images/index/back.png" class="backImg" onclick="window.location.href='myAddress.html'">
         </header>
     </div>
     <div class="addresss-detail" style=" margin-top: 45px;">
@@ -75,19 +75,19 @@
             填写信息
         </p>
         <p class="aade1">收货人姓名
-            <input type="text" class="input1" id="name" placeholder="请输入收货人姓名">
+            <input type="text" class="input1" id="name" placeholder="请输入收货人姓名" value="王军少">
         </p>
         <p class="aade1">联系电话
-            <input type="tel" class="input1" id="phone" placeholder="请输入联系电话">
+            <input type="tel" class="input1" id="phone" placeholder="请输入联系电话" value="15888888888">
         </p>
         <p class="aade1">邮政编码
-            <input type="tel" class="input1" id="code" placeholder="请输入邮政编码">
+            <input type="tel" class="input1" id="code" placeholder="请输入邮政编码" value="311400">
         </p>
         <p class="aade1" id="showAddress">所属地区
-            <input type="text" class="input1" id="address" placeholder="请选择所属地区"  readonly="true">
+            <input type="text" class="input1" id="address" placeholder="请选择所属地区"  readonly="true" value="北京市 北京市 东城区">
         </p>
         <p class="aade1">街道地址
-            <input type="text" class="input1" id="addr-detail" placeholder="请输入街道地址">
+            <input type="text" class="input1" id="addr-detail" placeholder="请输入街道地址" value="朝阳区 朝阳镇 朝阳小区 8号">
         </p>
         <div class="aade1 adde-addr">
             设为默认
@@ -179,10 +179,10 @@ $('.confirmInput').click(function(){
                 //弹出框类型必须传
                 type: 'alert',
                 //弹出标题
-                title: '添加成功',
+                title: '修改成功',
                 timeout: 2000,
                 //弹出内容
-                content: '您的地址添加成功！',
+                content: '您的地址修改成功！',
                 confirm: function() {
                     // alert("click event  callBack 2222!");
                     window.location.href='myAddress.html';

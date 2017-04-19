@@ -47,7 +47,7 @@
             <p class="gdp2">兑换级别：普通卡、银卡、金卡会员</p>
             <p class="gdp3"><span class="gdLen">3000</span>公里</p>
             <img src="images/index/gd1.png" class="gdImg">
-            <span class="topay"  onclick="window.location.href='shoppingcar-订单支付-成功.html'">立即支付</span>
+            <span class="topay" onclick="window.location.href='shoppingcar-订单支付-成功.html'">立即支付</span>
             <span class="cancelOrder">取消订单</span>
         </div>
         <p class="gdOne-t">订单号：<span>1201458745210326</span><i class="gdOne-status font-red2">电子码已发送</i></p>
@@ -64,7 +64,7 @@
             <p class="gdp3"><span class="gdLen">xxx</span>公里</p>
             <img src="images/index/gd3.png" class="gdImg">
         </div>
-         <div class="gdOne">
+        <div class="gdOne">
             <p class="gdp1">小熊煮蛋器自动断电单层蒸蛋器</p>
             <p class="gdp2">兑换级别：普通卡、银卡、金卡会员 拷贝</p>
             <p class="gdp3"><span class="gdLen">xxx</span>公里</p>
@@ -195,6 +195,45 @@ $('.topbar').find('.bar-one').click(function() {
         $(this).find('.dot').eq(0).addClass('active');
     }
 
+})
+
+
+
+
+
+$('.cancelOrder').click(function() {
+    var self = this;
+    new $.Dialog({
+        //弹出类型   默认alert
+        type: 'confirm',
+        //弹出标题 必填
+        title: '取消订单',
+        //弹出内容  必填
+        content: '您确认取消此订单吗？',
+        //点击确认回调函数 可不填
+        confirm: function() {
+            // alert("click confirm  event  callBack !");
+            new $.Dialog({
+                //弹出框类型必须传
+                type: 'alert',
+                //弹出标题
+                title: '取消成功',
+                timeout:2000,
+                //弹出内容
+                content: '订单取消成功！',
+                confirm: function() {
+                    // alert("click event  callBack 2222!");
+                    $(self).parent().prev().remove();
+                    $(self).parent().remove();
+                }
+            });
+        },
+        //点击取消回调   可不填
+        cancel: function() {
+            // alert("click cancel event callback ! ");
+        }
+
+    });
 })
 </script>
 

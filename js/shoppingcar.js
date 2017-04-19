@@ -96,7 +96,20 @@ myAnimate.purchase.normalChange = function () {
             //点击确认回调函数 可不填
             confirm: function confirm() {
                 // alert("click confirm  event  callBack !");
-                $(self).parent().parent().remove();
+
+                new $.Dialog({
+                    //弹出框类型必须传
+                    type: 'alert',
+                    //弹出标题
+                    title: '删除成功',
+                    timeout: 2000,
+                    //弹出内容
+                    content: '产品删除成功！',
+                    confirm: function confirm() {
+                        // alert("click event  callBack 2222!");
+                        $(self).parent().parent().remove();
+                    }
+                });
             },
             //点击取消回调   可不填
             cancel: function cancel() {
